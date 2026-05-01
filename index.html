@@ -1,120 +1,164 @@
 <!DOCTYPE html>
-<html lang="no" data-theme="light">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kristoffer Naley Nornes | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <title>Kristoffer Naley Nornes | Portefølje</title>
     <style>
-        :root { --primary: #2c3e50; }
-        body { font-family: system-ui, -apple-system, sans-serif; }
-        nav { background-color: #fff; border-bottom: 1px solid #e1e4e8; margin-bottom: 2rem; }
-        .hero { padding: 3rem 0; text-align: center; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 10px; margin-bottom: 2rem; }
-        .tag { background: #e9ecef; padding: 0.2rem 0.6rem; border-radius: 5px; font-size: 0.8rem; font-weight: bold; }
-        section { margin-bottom: 3rem; }
-        h2 { border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; display: inline-block; }
+        :root {
+            --primary: #6366f1; /* Moderne Indigo-farge */
+            --background-color: #0f172a; /* Mørk blåsvart bakgrunn */
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Inter', system-ui, sans-serif;
+            line-height: 1.5;
+        }
+
+        .container { max-width: 900px; }
+
+        /* Lovable-stil header */
+        header.hero {
+            padding: 5rem 0 3rem;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #64748b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Bento-stil kort */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        article {
+            background: var(--card-bg) !important;
+            border: 1px solid #334155 !important;
+            border-radius: 16px !important;
+            padding: 1.5rem !important;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary) !important;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 100px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        h2 { font-size: 1.8rem; margin-top: 2rem; }
+        h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff; }
+        p, li { color: #94a3b8; }
+        
+        .contact-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid #334155;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 
-    <nav class="container-fluid">
-        <ul>
-            <li><strong>Kristoffer Naley Nornes</strong></li>
-        </ul>
-        <ul>
-            <li><a href="#erfaring">Erfaring</a></li>
-            <li><a href="#utdanning">Utdanning</a></li>
-            <li><a href="#verv">Verv</a></li>
-            <li><a href="mailto:kristoffer.n.nornes@gmail.com" role="button">Kontakt</a></li>
-        </ul>
-    </nav>
-
     <main class="container">
         
-        <!-- Hero Seksjon -->
-        <section class="hero">
-            <h1>Driftskoordinator & Styreleder</h1>
-            <p>Engasjert og løsningsorientert med bred erfaring innen operativ drift, systemadministrasjon og kontinuerlig forbedring.</p>
-            <div class="grid">
-                <div>📍 Bergen</div>
-                <div>✉️ kristoffer.n.nornes@gmail.com</div>
-                <div>📞 986 52 565</div>
+        <header class="hero">
+            <span class="badge">Tilgjengelig for nye utfordringer</span>
+            <h1>Kristoffer Naley Nornes</h1>
+            <p style="font-size: 1.2rem; max-width: 600px;">
+                Driftskoordinator og Styreleder basert i Bergen. Spesialisert på operativ drift, digitalisering og økonomistyring.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="mailto:kristoffer.n.nornes@gmail.com" class="contact-pill">📧 E-post</a>
+                <a href="#" class="contact-pill">🔗 LinkedIn</a>
+                <a href="#" class="contact-pill">📞 986 52 565</a>
+            </div>
+        </header>
+
+        <section id="work">
+            <h2>Arbeidserfaring</h2>
+            <div class="bento-grid">
+                <article>
+                    <span class="badge">NÅVÆRENDE</span>
+                    <h3>Driftskoordinator</h3>
+                    <p><strong>Tide Bane</strong> | 2025 - nå</p>
+                    <small>Støtte til administrasjon, IT-kontaktpunkt og rekruttering av vognførere.</small>
+                </article>
+
+                <article>
+                    <h3>IT/Drift Assistent</h3>
+                    <p><strong>Handelshøyskolen BI</strong> | 2020 - 2022</p>
+                    <small>1. og 2. linje IT-support for studenter og faglige i et travelt akademisk miljø.</small>
+                </article>
+
+                <article>
+                    <h3>Vedlikeholdsassistent</h3>
+                    <p><strong>Tide Buss og Bane</strong> | 2024</p>
+                    <small>Oppfølging av teknisk vedlikehold på 34 bybanevogner.</small>
+                </article>
             </div>
         </section>
 
-        <!-- Om meg -->
-        <section id="om">
-            <h2>Om meg</h2>
-            <p>Jeg trives i en variert arbeidshverdag der jeg bidrar aktivt til å sikre effektiv drift og gode prosesser på tvers av avdelinger. Med bakgrunn fra både IT-support, transportsektoren og økonomistyring, har jeg et helhetlig blikk på hvordan teknologi og mennesker fungerer sammen.</p>
-        </section>
-
-        <!-- Erfaring -->
-        <section id="erfaring">
-            <h2>Erfaring</h2>
-            
-            <article>
-                <header>
-                    <strong>Driftskoordinator, Tide Bane</strong> 
-                    <span style="float: right;">01.2025 - nå</span>
-                </header>
-                Ansvar for støtte til administrasjonen i daglig drift. Fungerer som kontaktpunkt innen IT, bistår med rekruttering av vognførere, og sikrer videouttak ved hendelser. Aktiv rolle i ukentlige driftsmøter og forbedringsarbeid av turnus- og renholdsprosesser.
-            </article>
-
-            <article>
-                <header>
-                    <strong>Vedlikeholdsassistent, Tide Buss og Bane</strong>
-                    <span style="float: right;">06.2024 - 12.2024</span>
-                </header>
-                Oppfølging av vedlikehold og skader på 34 bybanevogner.
-            </article>
-
-            <article>
-                <header>
-                    <strong>Studentassistent IT/Drift, Handelshøyskolen BI</strong>
-                    <span style="float: right;">09.2020 - 11.2022</span>
-                </header>
-                Teknisk bistand til forelesere og IT-support (1. og 2. linje) til studenter. Utførte også administrative oppgaver for studieadministrasjonen.
-            </article>
-        </section>
-
-        <!-- Utdanning -->
-        <section id="utdanning">
-            <h2>Utdanning</h2>
-            <div class="grid">
-                <div>
-                    <strong>Bachelor i Økonomi og administrasjon</strong><br>
-                    Handelshøyskolen BI (2020 - 2024)<br>
-                    <small>Valgfag: Prosjektledelse, Arbeidsrett, Personlig økonomi.</small>
-                </div>
-                <div>
-                    <strong>Bacheloroppgave</strong><br>
-                    "Organisering av bankdrift i moderne tid" – om agile metoder og organisasjonskultur i Sparebanken Vest.
-                </div>
-            </div>
-        </section>
-
-        <!-- Verv -->
-        <section id="verv">
+        <section id="leadership">
             <h2>Verv & Ledelse</h2>
+            <div class="bento-grid">
+                <article style="grid-column: span 1;">
+                    <h3>Styreleder</h3>
+                    <p><strong>Borettslaget Håsteinsgate 9</strong></p>
+                    <small>Totalrenovering av takterrasse og full digitalisering av styrearbeid med Microsoft-suiten.</small>
+                </article>
+                
+                <article>
+                    <h3>Tillitsvalgt</h3>
+                    <p><strong>Fellesforbundet</strong></p>
+                    <small>Nestleder for vognførerklubben på Bybanen.</small>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Utdanning</h2>
             <article>
-                <strong>Styreleder, Borettslaget Håsteinsgate 9 (2022 - nå)</strong>
-                <ul>
-                    <li><strong>Økonomistyring:</strong> Holdt felleskostnader uendret tross prisstigning.</li>
-                    <li><strong>Digitalisering:</strong> Implementert Microsoft-suiten for bedre dokumentflyt.</li>
-                    <li><strong>Prosjektledelse:</strong> Totalrenovering av takterrasse (anbud og oppfølging).</li>
-                </ul>
-            </article>
-            <article>
-                <strong>Nestleder/Tillitsvalgt, Fellesforbundet (2023 - 2024)</strong><br>
-                Representerte vognførerne i vognførerklubben på Bybanen.
+                <h3>Bachelor i Økonomi og administrasjon</h3>
+                <p><strong>Handelshøyskolen BI</strong> | 2020 - 2024</p>
+                <p>Spesialisering i prosjektledelse og arbeidsrett. Skrev bacheloroppgave om agile metoder i bankdrift.</p>
             </article>
         </section>
+
+        <footer style="padding: 4rem 0; text-align: center;">
+            <p>© 2026 Kristoffer Naley Nornes</p>
+        </footer>
 
     </main>
-
-    <footer class="container">
-        <small>Laget av Kristoffer Naley Nornes © 2026</small>
-    </footer>
 
 </body>
 </html>
