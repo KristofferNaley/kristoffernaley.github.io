@@ -6,85 +6,42 @@
     <title>Kristoffer Naley Nornes | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <style>
-        :root {
-            --primary: #6366f1; /* Moderne Indigo-farge */
-            --background-color: #0f172a; /* Mørk blåsvart bakgrunn */
-            --card-bg: #1e293b;
-            --text-color: #f8fafc;
-        }
+       :root {
+    --primary: #6366f1; 
+    --background-color: #ffffff; /* Hvit bakgrunn */
+    --card-bg: #f8fafc;        /* Lys grå kort */
+    --text-color: #1e293b;    /* Mørk tekst */
+}
 
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Inter', system-ui, sans-serif;
-            line-height: 1.5;
-        }
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', system-ui, sans-serif;
+}
 
-        .container { max-width: 900px; }
+/* Ny stil for overskriften */
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    /* Gradient fra sort til mørkegrå */
+    background: linear-gradient(to right, #0f172a, #64748b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
 
-        /* Lovable-stil header */
-        header.hero {
-            padding: 5rem 0 3rem;
-            text-align: left;
-        }
+/* Oppdater kortene så de skiller seg ut på hvit bakgrunn */
+article {
+    background: var(--card-bg) !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    padding: 1.5rem !important;
+}
 
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, #fff, #64748b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Bento-stil kort */
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        article {
-            background: var(--card-bg) !important;
-            border: 1px solid #334155 !important;
-            border-radius: 16px !important;
-            padding: 1.5rem !important;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        article:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary) !important;
-        }
-
-        .badge {
-            font-size: 0.7rem;
-            padding: 0.2rem 0.5rem;
-            border-radius: 100px;
-            background: rgba(99, 102, 241, 0.1);
-            color: var(--primary);
-            border: 1px solid var(--primary);
-            margin-bottom: 0.5rem;
-            display: inline-block;
-        }
-
-        h2 { font-size: 1.8rem; margin-top: 2rem; }
-        h3 { font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff; }
-        p, li { color: #94a3b8; }
-        
-        .contact-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: #1e293b;
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            border: 1px solid #334155;
-            color: #fff;
-        }
+/* Oppdater tekstfargen i avsnitt for bedre kontrast */
+p, li, small { color: #475569 !important; }
+h3 { color: #1e293b !important; }
     </style>
 </head>
 <body>
