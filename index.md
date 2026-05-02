@@ -1,12 +1,12 @@
 ---
-layout: home
-title: Forside
+layout: single
+author_profile: true
+title: "Velkommen"
 ---
 
-# Velkommen til min portefølje
+Jeg er en engasjert og løsningsorientert **Driftskoordinator** med bred erfaring fra operativ drift og IT-support[cite: 1].
 
-Jeg er en engasjert og løsningsorientert person med erfaring fra **Tide Bane** og **Handelshøyskolen BI**. 
+### Hva jeg gjør nå
+For øyeblikket jobber jeg som **Driftskoordinator hos Tide Bane**, hvor jeg fungerer som kontaktpunkt for IT og bistår med rekruttering og driftsforbedringer[cite: 1]. Ved siden av dette leder jeg **Borettslaget Håsteinsgate 9**, hvor jeg nylig har gjennomført en totalrenovering av takterrassen og digitalisert styrearbeidet[cite: 1].
 
-### Mine roller
-- **Driftskoordinator** hos Tide Bane
-- **Styreleder** i Borettslaget Håsteinsgate 9
+[Se min fulle CV her](/cv.html)
