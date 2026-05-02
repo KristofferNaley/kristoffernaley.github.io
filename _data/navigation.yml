@@ -1,0 +1,5 @@
+main:
+  - title: "Om meg"
+    url: /index.html
+  - title: "CV"
+    url: /cv.html
