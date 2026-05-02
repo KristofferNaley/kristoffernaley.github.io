@@ -5,8 +5,24 @@ url: "https://knornes.no" # Bytt ut med ditt domene
 baseurl: ""
 
 # Tema-innstillinger
+# Slett alle linjer som starter med "theme:"
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # Prøv "air", "contrast", eller "mint" for ulike farger
+
+# GitHub Pages innstillinger
+url: "https://dittnavn.no" # Bruk ditt faktiske domene her
+baseurl: ""
+
+# Plugins som Minimal Mistakes krever
+plugins:
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+
+# Minimal Mistakes spesifikke innstillinger
+minimal_mistakes_skin: "air"
 
 # Personlig info (vises i margen)
 author:
