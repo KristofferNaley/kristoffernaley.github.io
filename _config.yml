@@ -9,7 +9,7 @@ baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
 
 # GitHub Pages innstillinger
-url: "https://dittnavn.no" # Bruk ditt faktiske domene her
+url: "https://knornes.no" # Bruk ditt faktiske domene her
 baseurl: ""
 
 # Plugins som Minimal Mistakes krever
