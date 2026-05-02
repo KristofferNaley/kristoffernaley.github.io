@@ -1,4 +1,38 @@
 title: Kristoffer Naley Nornes
-email: kristoffer.n.nornes@gmail.com
-description: Driftskoordinator og Styreleder basert i Bergen.
-theme: minima
+name: Kristoffer Naley Nornes
+description: "Driftskoordinator & Styreleder"
+url: "https://dittnavn.no" # Bytt ut med ditt domene
+baseurl: ""
+
+# Tema-innstillinger
+remote_theme: "mmistakes/minimal-mistakes@4.24.4"
+minimal_mistakes_skin: "air" # Prøv "air", "contrast", eller "mint" for ulike farger
+
+# Personlig info (vises i margen)
+author:
+  name: "Kristoffer Naley Nornes"
+  avatar: "/assets/images/profil.jpg" # Her kan du legge til bilde senere
+  bio: "Driftskoordinator hos Tide Bane & Styreleder."
+  location: "Bergen, Norge"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kristoffer.n.nornes@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kristoffernornes"
+
+# Innholdsstyring
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
