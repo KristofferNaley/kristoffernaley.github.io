@@ -5,7 +5,7 @@ url: "https://knornes.no" # Bytt ut med ditt domene
 baseurl: ""
 
 # Tema-innstillinger
-remote_theme: "mmistakes/minimal-mistakes@4.24.4"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air" # Prøv "air", "contrast", eller "mint" for ulike farger
 
 # Personlig info (vises i margen)
