@@ -1,5 +1,7 @@
 main:
-  - title: "Om meg"
+  - title: "Forside"
     url: /index.html
   - title: "CV"
     url: /cv.html
+  - title: "Kunnskap"
+    url:: /erfaring.html
