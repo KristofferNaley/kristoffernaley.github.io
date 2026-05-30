@@ -1,7 +1,7 @@
 main:
   - title: "Forside"
-    url: /index.md
+    url: /index
   - title: "Erfaring"
-    url: /cv.md
+    url: /cv
   - title: "Kunnskap"
-    url:: /erfaring.md
+    url:: /kunnskap
